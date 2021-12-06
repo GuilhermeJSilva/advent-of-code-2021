@@ -13,7 +13,7 @@ type Board struct {
 	col_missing []int
 }
 
-func readPulledNumbers() []int {
+func readIntLine() []int {
 	var line string
 	pulledNumbers := []int{}
 	fmt.Scanln(&line)
@@ -130,7 +130,7 @@ func findLoser(boards []Board, numbers []int) int {
 }
 
 func SolveDay4() {
-	pulledNumbers := readPulledNumbers()
+	pulledNumbers := readIntLine()
 	boards := readBoards()
 	// fmt.Printf("Part 1: %v\n", findWinner(boards, pulledNumbers))
 	fmt.Printf("Part 2: %v\n", findLoser(boards, pulledNumbers))
