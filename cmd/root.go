@@ -41,6 +41,7 @@ var allSolutions []func() = []func(){
 	solutions.SolveDay11,
 	solutions.SolveDay12,
 	solutions.SolveDay13,
+	solutions.SolveDay14,
 }
 
 // rootCmd represents the base command when called without any subcommands
