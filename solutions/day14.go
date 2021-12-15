@@ -68,7 +68,6 @@ func buildPairCounter(str string) map[string]int {
 	for i := 0; i < len(str)-1; i++ {
 		pair := string(str[i]) + string(str[i+1])
 		counter[pair]++
-
 	}
 	return counter
 }
