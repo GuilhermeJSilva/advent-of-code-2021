@@ -80,6 +80,7 @@ func createCommand(day int, solution func()) *cobra.Command {
 	return &cobra.Command{
 		Use: fmt.Sprintf("day%02d", day+1),
 		Run: func(cmd *cobra.Command, args []string) {
+			fmt.Printf("Solving Day %d\n", day+1)
 			solution()
 		},
 	}
